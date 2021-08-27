@@ -41,6 +41,9 @@ class TESTCAE(nn.Module):
         output = self.sig_de(output)
 
         output = output.view(32, 1, 155, 256)
+        """
+        1245184 = 32 * 1 * 152 * 256
+        """
         return output
 
 
